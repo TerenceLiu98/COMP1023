@@ -9,10 +9,10 @@ int main(void)
 	
 	//This is the answer of Question Two
 	printf("The first line is '!C is cool! !C is cool!''");
-	printf("The second line is 10\n");
-	printf("The third line is 9\n");
-	printf("The forth line is 8\n");
-	printf("THe fifth line10\n");
+	printf("The second line is 11\n");
+	printf("The third line is 12\n");
+	printf("The forth line is 12\n");
+	printf("THe fifth line is 11\n");
 	
 	//This is the answer of Question Three
 	printf("When we user While loop, we should enter brace at the beginning and the end of the loop.\n");
