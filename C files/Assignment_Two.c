@@ -8,7 +8,7 @@ int main(void)
 	printf("c will print '1'\n");
 	
 	//This is the answer of Question Two
-	printf("The first line is '!C is cool! !C is cool!''");
+	printf("The first line is '%s!C is cool! !C is cool!''");
 	printf("The second line is 11\n");
 	printf("The third line is 12\n");
 	printf("The forth line is 12\n");
