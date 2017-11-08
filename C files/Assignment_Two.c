@@ -32,7 +32,7 @@ int main(void)
 	printf("\n");
 	
 	//This is the answer of Question Five
-	printf("The final values of x,i and j is :2, 2, 0\n\n\n");
+	printf("The final values of x,i and j is :1, 0, 2\n\n\n");
 	
 	//This is the answer of Question Six
 	{
