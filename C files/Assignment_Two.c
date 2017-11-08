@@ -10,7 +10,7 @@ int main(void)
 	//This is the answer of Question Two
 	printf("The first line is '%s!C is cool! !C is cool!''");
 	printf("The second line is 11\n");
-	printf("The third line is 12\n");
+	printf("The third line is 11\n");
 	printf("The forth line is 12\n");
 	printf("THe fifth line is 11\n");
 	
