@@ -283,4 +283,201 @@ while(scanf("%d",&hr) == 1)
 
 \7. The ABC Mail Order Grocery sells artichokes for \$1.15 per pound, and carrots for  \$1.09 per pound. It gives a 5%discount for orders of \$100 or more prior to adding shipping costs. It charges \$6.50 shipping and handling for any order of 5 pounds or under, \$14.00 shippingand handling for orders over 5 pounds and under 20 pounds, and $14.00 plus$0.50 per pound for shipments of 20 pounds or more. Write a program that uses aswitch statement in a loop such that a response of a lets the user enter thepounds of artichokes desired, b the pounds of beets, c the pounds of carrots,and q allows the user to exit the ordering process. The program should keep trackof cumulative totals. That is, if the user enters 4 pounds of beets and laterenters 5 pounds of beets, the program should use report 9 pounds of beets. Theprogram then should compute the total charges, the discount, if any, theshipping charges, and the grand total. Theprogram then should display all the purchase information: the cost per pound, the pounds ordered, and the cost for that order for eachvegetable, the total cost of the order, thediscount (if there is one), the shipping charge, and the grand total of all the charges.
 
+```C
+#include
+
+#include
+
+#define RATE1 2.05            //洋蓟的价格
+
+#define RATE2 1.15            //甜菜的价格
+
+#define RATE3 1.09            //胡萝卜的价格
+
+#define RATE4 6.5             //少于5磅时收取的费用
+
+#define RATE5 14              //5磅到20磅收取的费用
+
+#define RATE6 0.5             //超过20磅续重1磅收取的费用
+
+#define RATE7 0.05            //1-打折优惠
+
+#define BREAK1 100            //打折的价格
+
+#define BREAK2 5              //收取6.5美元时的重量
+
+#define BREAK3 20             //收取14美元的重量
+
+int main(void)
+
+{
+
+char ch;
+
+double a = 0, b = 0, c = 0, u = 0, suma = 0, sumb = 0, sumc = 0, sum = 0, v = 0, h = 0;//三种菜代称，数量（abc)，价格(suma,sumb,sumc,v)，总重(sum)，总价(h)
+
+int num;
+
+double all, money;
+
+printf("****************************************************************\n\n");
+
+printf("Choose your vegetable type:\n");
+
+printf("a) Artichoke                              b) beet\n");
+
+printf("c) carrot                                 s) Bill\n");
+
+printf("q) quit\n");
+
+printf("****************************************************************\n\n");
+
+while ((ch = getchar()) != 'q')
+
+{
+
+if (islower(ch))
+
+{
+
+switch (ch)
+
+{
+
+case 'a':
+
+printf("Please enter the weight (pounds);");
+
+scanf("%lf", &v);
+
+a += v;
+
+suma += (v*RATE1);
+
+break;
+
+case 'b':
+
+printf("Please enter the weight (pounds);");
+
+scanf("%lf", &v);
+
+b += v;
+
+sumb += (v*RATE2);
+
+break;
+
+case 'c':
+
+printf("Please enter the weight (pounds);");
+
+scanf("%lf", &v);
+
+c += v;
+
+sumc += (v*RATE3);
+
+break;
+
+case 's':
+
+u = a + b + c;
+
+sum = suma + sumb + sumc;
+
+if (sum >= BREAK1)
+
+{
+
+h = RATE7*sum;
+
+sum *= (1 - RATE7);
+
+}
+
+if (u < BREAK2)
+
+{
+
+money = RATE4;
+
+sum += RATE4;
+
+}
+
+
+
+if (u <= BREAK3&&u >= BREAK2)
+
+{
+
+money = RATE5;
+
+sum += RATE5;
+
+}
+
+if (u > BREAK3)
+
+{
+
+money = (RATE5 + RATE6*(u - BREAK3));
+
+sum += (RATE5 + RATE6*(u - BREAK3));
+
+}
+
+printf("Artichoke($2.05/pounds)          %.2lf            %.2lf\n", a, suma);
+
+printf("Beet($1.15/pounds)               %.2lf            %.2lf\n", b, sumb);
+
+printf("Carrot ($2.05/pounds)            %.2lf            %.2lf\n", c, sumc);
+
+printf("Total cost of order              %.2lf           %.2lf\n", u, suma+sumb+sumc);
+
+printf("discount                                         -%.2lf\n", h);
+
+printf("Freight and packing fees                          %.2lf\n", money);
+
+printf("Total cost                                        %.2lf\n", sum);
+
+a = 0; b = 0; c = 0; sum = 0; suma = 0; sumb = 0; sumc = 0; u = 0; h = 0; money = 0;
+
+break;
+
+default:
+
+printf("Please enter the correct letter!\n");
+
+break;
+
+}
+
+printf("****************************************************************\n\n");
+
+printf("Choose your vegetable type:\n");
+
+printf("a) Artichoke                              b) beet\n");
+
+printf("c) carrot                                 s) Bill\n");
+
+printf("q) quit\n");
+
+printf("****************************************************************\n\n");
+
+}
+
+
+
+}
+
+return 0;
+
+ 
+
+}
+
+```
+
  
