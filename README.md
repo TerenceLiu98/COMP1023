@@ -1,3 +1,4 @@
+license; Language:C
 # C_Learning
 A STAT Student Structure Programming 
 ## About this course
