@@ -2,7 +2,7 @@
 # C_Learning
 A STAT Student Structure Programming 
 ## About this course
-In UIC ( United International College ) every STAT student must learn C language as the basic computer coding ability. 
+In UIC ( United International College ) every STAT student must learn `C` as the basic computer coding ability. 
 ## Textbook
 According to the textbook list, we should use `C Primer Plus`
 
