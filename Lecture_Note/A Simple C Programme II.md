@@ -1,7 +1,8 @@
-# A Simple C Programme II
+# A Simple C program II
 ## Calculate the area of a Circle: Radius is 8 and assume that the pi equals to 3.14
 ### First form: 
-```
+
+```C
 //
 //  main.c
 //  helloworld
@@ -13,7 +14,7 @@
 #include <stdio.h>
 #define pi 3.14 // define pi = 3.14
 
-int main(void) //a simple programme
+int main(void) //a simple program
 {
     // insert code here...
     int num; //define a variable called num, a interger
@@ -37,7 +38,7 @@ int main(void) //a simple programme
 ```
 
 ### Second form:
-```
+```C
 //
 //  main.c
 //  helloworld
@@ -48,7 +49,7 @@ int main(void) //a simple programme
 
 #include <stdio.h>
 
-int main(void) //a simple programme
+int main(void) //a simple program
 {
     // insert code here...
     int num; //define a variable called num, a interger
@@ -77,7 +78,7 @@ int main(void) //a simple programme
 ## A calculator to solve a ]unitary quadratic equation
 Time: In the National Holiday
 Place: Home
-```
+```C
 //
 //  main.c
 //  C_study

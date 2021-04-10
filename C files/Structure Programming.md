@@ -28,7 +28,7 @@ E-mail: ivandeng@uic.edu.hk
  * Application software 
  * System software 
 
-3. Construction of a Programme 
+3. Construction of a program 
 
 [![b.png](https://i.loli.net/2017/09/27/59cb36e37ddc8.png)](https://i.loli.net/2017/09/27/59cb36e37ddc8.png)
 

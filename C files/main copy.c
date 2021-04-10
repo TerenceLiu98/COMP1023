@@ -9,7 +9,7 @@
 #include <stdio.h>
 #define pi 3.14 // define pi = 3.14
 
-int main(void) //a simple programme
+int main(void) //a simple program
 {
     // insert code here...
     int num; //define a variable called num, a interger

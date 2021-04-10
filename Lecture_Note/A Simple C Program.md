@@ -47,9 +47,10 @@ The % alerts the program that a variable is to be printed at that location, and 
 
 - - - -
 ## A Simple Example
-```
+
+```C
 #include <stdio.h>
-int main(void) /* a simple programme *／
+int main(void) /* a simple program *／
 {
 int num; /* define a variable called num * /
 num = 1; /* assign a value to num */
@@ -66,7 +67,7 @@ ruturn 0;
 ## Multiple Declaration
 Example:
 
-```
+```C
 #include <stdio.h>
 int main(void)
 {
@@ -83,7 +84,7 @@ int main(void)
 - - - -
 
 ## Debugging
-Programme errors often are called bugs, and finding and fixing the errors is called debugging.
+program errors often are called bugs, and finding and fixing the errors is called debugging.
 ### Syntax Errors
 Use valid C symbols in the wrong places. Do not follow C’s rules
 ### Semantic Errors
